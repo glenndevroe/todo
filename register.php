@@ -39,16 +39,19 @@ if ( !empty($_POST) ) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Todo</title>
 </head>
 <body>
-    <img src="img/logo2.png" alt="logo" id="logo">
 
     <?php if(isset($error) ): ?>
         <?php echo $error ?>
     <?php endif; ?>
 
+    <h1 class="logotekst">TODO</h1>
+    <p class="tekstonderlogo">Task Manager</p>
+    <div class="rand">
     <form action="" method="post" class="formlogin">
 
         <label class="label" for="username">Username</label><br>
@@ -64,7 +67,8 @@ if ( !empty($_POST) ) {
         <input class="inputfield" type="password" name="password_confirmation"><br>
 
         <input class="button" type="submit" value="Register">
-    </form>
 
-</body>
+    </form>
+    <a href="login.php" id="registerlink">You have an account? Log in here.</a>
+</div>
 </html>
