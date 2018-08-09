@@ -7,10 +7,10 @@ if(isset ($_SESSION['username'])){
     header('Location: login.php');
 }
 
-include_once("classes/Post.class.php");
+//include_once("classes/Post.class.php");
 include_once("classes/User.class.php");
 
-if ( isset($_GET['search']) ){
+/*if ( isset($_GET['search']) ){
     $search = $_GET['search'];
     $posts = Post::searchPosts($search);
     echo $search;
@@ -18,7 +18,7 @@ if ( isset($_GET['search']) ){
 } else {
     $posts = Post::ShowPosts();
     
-}
+}*/
 
 ?><!DOCTYPE html>
 <html lang="en">
