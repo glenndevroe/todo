@@ -15,7 +15,7 @@ if ( !empty($_POST) ) {
         $security->passwordsAreSecure();
 
         $db = Db::getInstance();
-        $user = new User($db);
+        $user = new Student($db);
         $user->setEmail($_POST['email'] );
         $hash = password_hash($_POST['password'], PASSWORD_DEFAULT);
         $user->setUsername($_POST['username'] );
